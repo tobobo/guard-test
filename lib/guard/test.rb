@@ -31,12 +31,12 @@ module Guard
     end
 
     def run_all
-      Inspector.test_paths = @options[:test_paths]
-      test_paths = @options[:test_paths].clone # because clean - cleaning variable
-      passed = @runner.run(Inspector.clean(test_paths), message: 'Running all tests')
+      # Inspector.test_paths = @options[:test_paths]
+      # test_paths = @options[:test_paths].clone # because clean - cleaning variable
+      # passed = @runner.run(Inspector.clean(test_paths), message: 'Running all tests')
 
-      @failed_paths = [] if passed
-      @last_failed  = !passed
+      # @failed_paths = [] if passed
+      # @last_failed  = !passed
     end
 
     def reload

@@ -102,11 +102,7 @@ module Guard
       end
 
       def command_options
-        if drb? || zeus? || spring?
-          []
-        else
-          []
-        end
+        []
       end
 
     end
